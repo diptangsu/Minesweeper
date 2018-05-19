@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:padding="10dp"
+            android:shape="rectangle">
+            <corners
+                android:bottomLeftRadius="30dp"
+                android:bottomRightRadius="30dp"
+                android:topLeftRadius="30dp"
+                android:topRightRadius="30dp" />
+            <!--<solid android:color="#ff635c" />-->
+        </shape>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/mine_red" />
+        <!--<bitmap android:src="@drawable/landmine" />-->
+    </item>
+</layer-list>
