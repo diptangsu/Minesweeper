@@ -434,3 +434,4 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 // TODO: Add high scores feature
+// TODO: Display all scores from best to worst
