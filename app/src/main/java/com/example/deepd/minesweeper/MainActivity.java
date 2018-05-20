@@ -347,7 +347,8 @@ public class MainActivity extends AppCompatActivity {
         if (land[x][y] == 0) {
             clearLand(x, y);
         } else if (land[x][y] == -1) {
-            gameOver(x, y);
+            if (!flagPlaced[x][y])
+                gameOver(x, y);
         } else {
             revealNumber(x, y);
         }
