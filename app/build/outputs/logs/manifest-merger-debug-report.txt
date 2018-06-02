@@ -22,9 +22,11 @@ MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\deepd\
 MERGED from [com.android.support:transition:27.1.1] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\0d08ced06f2037adebf6405b88b8e97c\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\d0f4c257b873f6c594b322507a2cd65a\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\bcb353755d29dce390602c85467f5e69\AndroidManifest.xml:17:1-22:12
+MERGED from [com.daimajia.easing:library:2.0] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\library-2.0.aar\9ce15e20731cf98e7d7c825913f1705f\AndroidManifest.xml:2:1-12:12
+MERGED from [com.daimajia.androidanimations:library:2.3] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\library-2.3.aar\6348741b0447818a7ed594f5ed400ffc\AndroidManifest.xml:2:1-12:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\fb867bcab64024258dcffb4ff6a61929\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\288ba9d49e8980bff0bd419cd129a570\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\e4a7e308bf386de3158f6db43ea2513d\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\fb867bcab64024258dcffb4ff6a61929\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a6296232f9da3532c20bae0c365ad47c\AndroidManifest.xml:17:1-22:12
 INJECTED from E:\Work\AndroidWorkshop\Minesweeper\app\src\main\AndroidManifest.xml:2:1-32:12
 INJECTED from E:\Work\AndroidWorkshop\Minesweeper\app\src\main\AndroidManifest.xml:2:1-32:12
@@ -141,12 +143,16 @@ MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\deepd\.gr
 MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\d0f4c257b873f6c594b322507a2cd65a\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\bcb353755d29dce390602c85467f5e69\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\bcb353755d29dce390602c85467f5e69\AndroidManifest.xml:20:5-44
+MERGED from [com.daimajia.easing:library:2.0] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\library-2.0.aar\9ce15e20731cf98e7d7c825913f1705f\AndroidManifest.xml:8:5-10:41
+MERGED from [com.daimajia.easing:library:2.0] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\library-2.0.aar\9ce15e20731cf98e7d7c825913f1705f\AndroidManifest.xml:8:5-10:41
+MERGED from [com.daimajia.androidanimations:library:2.3] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\library-2.3.aar\6348741b0447818a7ed594f5ed400ffc\AndroidManifest.xml:8:5-10:41
+MERGED from [com.daimajia.androidanimations:library:2.3] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\library-2.3.aar\6348741b0447818a7ed594f5ed400ffc\AndroidManifest.xml:8:5-10:41
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\fb867bcab64024258dcffb4ff6a61929\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\fb867bcab64024258dcffb4ff6a61929\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\288ba9d49e8980bff0bd419cd129a570\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\288ba9d49e8980bff0bd419cd129a570\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\e4a7e308bf386de3158f6db43ea2513d\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\e4a7e308bf386de3158f6db43ea2513d\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\fb867bcab64024258dcffb4ff6a61929\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\fb867bcab64024258dcffb4ff6a61929\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a6296232f9da3532c20bae0c365ad47c\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\deepd\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a6296232f9da3532c20bae0c365ad47c\AndroidManifest.xml:20:5-44
 INJECTED from E:\Work\AndroidWorkshop\Minesweeper\app\src\main\AndroidManifest.xml

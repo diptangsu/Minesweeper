@@ -33,4 +33,8 @@ dependencies {
     implementation 'com.otaliastudios:zoomlayout:1.1.0'
     implementation 'com.waynell.library:drop-animation-view:1.0'
     implementation 'com.android.support:cardview-v7:27.1.1'
+
+    implementation 'com.android.support:support-compat:27.1.1'
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
 }

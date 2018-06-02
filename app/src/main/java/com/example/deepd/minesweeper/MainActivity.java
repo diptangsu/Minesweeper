@@ -23,6 +23,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.waynell.library.DropAnimationView;
 
 import java.util.Objects;
@@ -64,6 +66,14 @@ public class MainActivity extends AppCompatActivity {
                 if (flags > 0) {
                     flagPlaced[x][y] = true;
                     b.setBackgroundResource(R.drawable.background_flag);
+                    YoYo.with(Techniques.ZoomInDown)
+                            .duration(700)
+                            .repeat(0)
+                            .playOn(b);
+                    YoYo.with(Techniques.RubberBand)
+                            .duration(700)
+                            .repeat(1)
+                            .playOn(b);
                     flags--;
                     flagsLeft.setText("" + flags);
 
