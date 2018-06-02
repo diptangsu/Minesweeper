@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 if (flags > 0) {
                     flagPlaced[x][y] = true;
                     b.setBackgroundResource(R.drawable.background_flag);
+
                     YoYo.with(Techniques.ZoomInDown)
                             .duration(700)
                             .repeat(0)
@@ -74,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
                             .duration(700)
                             .repeat(1)
                             .playOn(b);
+
                     flags--;
                     flagsLeft.setText("" + flags);
 
