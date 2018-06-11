@@ -1,8 +1,10 @@
 package com.example.deepd.minesweeper;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -27,8 +29,11 @@ import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 import com.waynell.library.DropAnimationView;
 
+import java.text.DateFormat;
+import java.util.Date;
 import java.util.Objects;
 import java.util.Random;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import tyrantgit.explosionfield.ExplosionField;
@@ -39,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
     TextView flagsLeft, winLose;
     GridLayout mineField;
     int rows, cols, hr, min, sec;
+    public static final String MyPREFERENCES = "MyPrefs";
     Button block[][];
     Chronometer timer;
     Typeface digital, digitalItalics;
@@ -48,6 +54,9 @@ public class MainActivity extends AppCompatActivity {
     int land[][], flags, minesDeactivated;
     boolean isCleared[][], flagPlaced[][];
     String mines[];
+    char difficulty;
+    Set<String[]> highScores;
+    SharedPreferences sharedPreferences;
 
     DropAnimationView dropAnimationView;
 
@@ -135,9 +144,12 @@ public class MainActivity extends AppCompatActivity {
         hr = min = sec = 0;
 
         Intent i = getIntent();
+        difficulty = i.getCharExtra("difficulty", '\u0000');
         rows = i.getIntExtra("r", 0);
         cols = i.getIntExtra("c", 0);
         flags = i.getIntExtra("flags", 0);
+
+        sharedPreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
 
         mineField.setColumnCount(cols);
         block = new Button[rows][cols];
@@ -254,8 +266,10 @@ public class MainActivity extends AppCompatActivity {
                 recreate();
             }
         });
-        if (win)
+        if (win) {
             builder.setIcon(R.drawable.ic_insert_emoticon_black_24dp);
+            addScore(hms);
+        }
         else
             builder.setIcon(android.R.drawable.ic_dialog_alert);
         builder.show();
@@ -444,6 +458,18 @@ public class MainActivity extends AppCompatActivity {
                 }, 500);
             }
         }
+    }
+
+    private void addScore(String timeTaken) {
+        String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
+        String hScore[] = {"dip", "gos", "123"};
+        Toast.makeText(this, currentDateTimeString, Toast.LENGTH_SHORT).show();
+
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+//        editor.putStringSet("highScores", highScores);
+
+        editor.apply();
+//        hs.add(hScore);
     }
 }
 // TODO: Add high scores feature

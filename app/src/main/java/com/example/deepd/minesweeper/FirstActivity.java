@@ -119,19 +119,20 @@ public class FirstActivity extends AppCompatActivity {
     }
 
     public void beginEasy(View view) {
-        startGame(10, 8, 10);
+        startGame('e', 10, 8, 4);
     }
 
     public void beginIntermediate(View view) {
-        startGame(15, 10, 25);
+        startGame('i', 15, 10, 25);
     }
 
     public void beginHard(View view) {
-        startGame(23, 16, 70);
+        startGame('h', 23, 16, 70);
     }
 
-    public void startGame(int r, int c, int flags) {
+    public void startGame(char difficulty, int r, int c, int flags) {
         Intent i = new Intent(FirstActivity.this, MainActivity.class);
+        i.putExtra("difficulty", difficulty);
         i.putExtra("r", r);
         i.putExtra("c", c);
         i.putExtra("flags", flags);
