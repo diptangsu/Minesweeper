@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String MyPREFERENCES = "MyPrefs";
     Button block[][];
     Chronometer timer;
+    private long timePaused;
     Typeface digital, digitalItalics;
 
     ExplosionField explosionField;
@@ -171,6 +172,7 @@ public class MainActivity extends AppCompatActivity {
         createMineField();
 
         timer.start();
+        timePaused = 0;
     }
 
     @Override
@@ -208,6 +210,20 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        timePaused = timer.getBase() - SystemClock.elapsedRealtime();
+        timer.stop();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        timer.setBase(timePaused + SystemClock.elapsedRealtime());
+        timer.start();
     }
 
     @SuppressLint("SetTextI18n")
